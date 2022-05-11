@@ -124,7 +124,7 @@
       }
     }
   },
-  "name": "DL_APT_DATA",
+  "name": "Appointments data",
   "imgPattern": 4,
   "metrics": {
     "probes": [],
@@ -181,11 +181,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652284474088
+    "lastModifiedOn": 1652284577690
   },
   "creationTag": {
     "versionNumber": 0,
@@ -194,7 +194,7 @@
     },
     "lastModifiedOn": 1652251910309
   },
-  "shortDesc": "The project *DL_APT_DATA* was copied from *DSSPROJ_DL_APT_DATA* by Administrator on May 11th 2022",
+  "shortDesc": "Downloads this dataset: https://www.kaggle.com/datasets/joniarroba/noshowappointments?select\u003dKaggleV2-May-2016.csv",
   "tags": [
     "duplicated"
   ],
