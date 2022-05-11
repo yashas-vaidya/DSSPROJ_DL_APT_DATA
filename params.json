@@ -124,7 +124,7 @@
       }
     }
   },
-  "name": "Download appointments data",
+  "name": "DL_APT_DATA",
   "imgPattern": 4,
   "metrics": {
     "probes": [],
@@ -181,11 +181,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652284468013
+    "lastModifiedOn": 1652284474088
   },
   "creationTag": {
     "versionNumber": 0,
@@ -194,7 +194,7 @@
     },
     "lastModifiedOn": 1652251910309
   },
-  "shortDesc": "",
+  "shortDesc": "The project *DL_APT_DATA* was copied from *DSSPROJ_DL_APT_DATA* by Administrator on May 11th 2022",
   "tags": [
     "duplicated"
   ],
