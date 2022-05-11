@@ -1,0 +1,269 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "PatientId",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "PatientId",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "AppointmentID",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "AppointmentID",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "PatientId",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "AppointmentID",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Gender",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "ScheduledDay",
+      "type": "date",
+      "table": 0
+    },
+    {
+      "name": "AppointmentDay",
+      "type": "date",
+      "table": 0
+    },
+    {
+      "name": "Age",
+      "type": "int",
+      "table": 0
+    },
+    {
+      "name": "Neighbourhood",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Scholarship",
+      "type": "int",
+      "table": 0
+    },
+    {
+      "name": "Hipertension",
+      "type": "int",
+      "table": 0
+    },
+    {
+      "name": "Diabetes",
+      "type": "int",
+      "table": 0
+    },
+    {
+      "name": "Alcoholism",
+      "type": "int",
+      "table": 0
+    },
+    {
+      "name": "Handcap",
+      "type": "int",
+      "table": 0
+    },
+    {
+      "name": "SMS_received",
+      "type": "int",
+      "table": 0
+    },
+    {
+      "name": "No-show",
+      "type": "boolean",
+      "table": 0
+    },
+    {
+      "name": "prev_apts_max5",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "avg_prev_noshow_max5",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "prev_apt_noshow",
+      "type": "boolean",
+      "table": 1
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "PatientId",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "AppointmentID",
+            "type": "string"
+          },
+          {
+            "name": "Gender",
+            "type": "string"
+          },
+          {
+            "name": "ScheduledDay",
+            "type": "date"
+          },
+          {
+            "name": "AppointmentDay",
+            "type": "date"
+          },
+          {
+            "name": "Age",
+            "type": "int"
+          },
+          {
+            "name": "Neighbourhood",
+            "type": "string"
+          },
+          {
+            "name": "Scholarship",
+            "type": "int"
+          },
+          {
+            "name": "Hipertension",
+            "type": "int"
+          },
+          {
+            "name": "Diabetes",
+            "type": "int"
+          },
+          {
+            "name": "Alcoholism",
+            "type": "int"
+          },
+          {
+            "name": "Handcap",
+            "type": "int"
+          },
+          {
+            "name": "SMS_received",
+            "type": "int"
+          },
+          {
+            "name": "No-show",
+            "type": "boolean"
+          },
+          {
+            "name": "prev_apts_max5",
+            "type": "bigint"
+          },
+          {
+            "name": "avg_prev_noshow_max5",
+            "type": "double"
+          },
+          {
+            "name": "prev_apt_noshow",
+            "type": "boolean"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "enableAutoCastInJoinConditions": false
+}
